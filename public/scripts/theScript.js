@@ -1,6 +1,6 @@
 
   // Load the SDK asynchronously
-  (function(d, s, id) {
+  (function loadSDK(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
     js = d.createElement(s); js.id = id;
@@ -71,7 +71,14 @@ function loadFriends() {
 	  	}
 	  	$('#studentList').append(thehtml);
     });
+    return null;
 }
 
+// $('document').ready(function() {
 
-
+//   loadFriends();
+// });
+setTimeout(
+  function() {
+    loadFriends();
+  }, 400);
