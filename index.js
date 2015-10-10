@@ -25,14 +25,10 @@ app.get('/', function(req, res) {
 	res.render('index');
 });
 
-<<<<<<< HEAD
 app.get('/friendSelect', function(req, res) {
 	res.render('friendSelect');
 });
 
-app.get('/tset', function(req, res) {
-	res.send('Hello world!');
-=======
 app.get('/test', function(req, res) {
   res.send('hello world');
 });
@@ -57,8 +53,6 @@ app.post('/submit', function(req, res) {
     	console.log(myObject);
     }
     
-
->>>>>>> 1f0adc3f20c9ee44951b4c5e585b2c4476c6b689
 });
 
 //	launch
