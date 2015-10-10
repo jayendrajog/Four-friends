@@ -6,12 +6,28 @@
     js = d.createElement(s); js.id = id;
     js.src = "//connect.facebook.net/en_US/sdk.js";
     fjs.parentNode.insertBefore(js, fjs);
-    
   }(document, 'script', 'facebook-jssdk'));
+
+   window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '521096238056941',
+    cookie     : true,  // enable cookies to allow the server to access 
+                        // the session
+    status 	   : true, 
+    xfbml      : true,  // parse social plugins on this page
+    version    : 'v2.5' // use version 2.2										
+  });
+};
+
+
+
+
 
   function fb_login() {
 	FB.login(function(response)
-		{statusChangeCallback(response);},
+		{
+		 statusChangeCallback(response);
+		},
 		{scope: 'email,public_profile,user_friends'});
 	}
 
@@ -27,16 +43,7 @@
       // Logged into your app and Facebook. 
       window.location = "/friendSelect";
     } 
-    else if (response.status === 'not_authorized') {
-      // The person is logged into Facebook, but not your app.
-      document.getElementById('status').innerHTML = 'Please log ' +
-        'into this app.';
-    } else {
-      // The person is not logged into Facebook, so we're not sure if
-      // they are logged into this app or not.
-      document.getElementById('status').innerHTML = 'Please log ' +
-        'into Facebook.';
-    }
+   
   }
   
 
@@ -49,18 +56,8 @@
     });
   }
 
-  window.fbAsyncInit = function() {
-  FB.init({
-    appId      : '521096238056941',
-    cookie     : true,  // enable cookies to allow the server to access 
-                        // the session
-    status 	   : true, 
-    xfbml      : true,  // parse social plugins on this page
-    version    : 'v2.5' // use version 2.2										
-  });
-};
-
-function loadFriends() {
+function loadFriends() 
+{
     FB.api('/me/friends', function(response) {
     	var thehtml = '';
     	for(i = 0; i < response.data.length; i++)
@@ -74,6 +71,9 @@ function loadFriends() {
     return null;
 }
 
+<<<<<<< HEAD
+document.getElementById('#fb-root').onload = function() {loadFriends();};
+=======
 // $('document').ready(function() {
 
 //   loadFriends();
@@ -82,3 +82,4 @@ setTimeout(
   function() {
     loadFriends();
   }, 400);
+>>>>>>> 526cbad8aa59211e0b2442bf344fce4f39b001ae
