@@ -12,3 +12,35 @@ h1{
 	padding-top: 15vh;
 	font: 800% "Title Font", Arial, Helvetica;
 }
+
+
+.login{
+	height: 40vh;
+	width: 40vw;
+	background-color: white;
+	margin-left: 30vw;	
+}
+
+.btn-primary{
+	margin-left: 2vw;
+	width: 17vw;
+	margin-top: 3vh;
+}
+#fblogin{
+	background-color: #3B5998;
+}
+
+#glogin{
+	border-color: #DC4E41;
+	background-color: #DC4E41;
+}
+
+#tlogin{
+	border-color: #4099FF;
+	background-color: #4099FF;
+}
+
+.email-login{
+	height: 100%;
+	border-left: thick solid #ff0000;
+}
