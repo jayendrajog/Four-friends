@@ -10,7 +10,6 @@
 
   function fb_login() {
 	FB.login( function(response) {statusChangeCallback(response);}, { scope: 'email,public_profile,user_friends' } );
-
 	}
 
 // This is called with the results from from FB.getLoginStatus().
@@ -23,7 +22,7 @@
     // for FB.getLoginStatus().
     if (response.status === 'connected') {
       // Logged into your app and Facebook. 
-      window.location = "https://www.google.com/";
+      window.location = "/friendSelect";
     } 
     else if (response.status === 'not_authorized') {
       // The person is logged into Facebook, but not your app.
@@ -57,27 +56,31 @@
     version    : 'v2.2' // use version 2.2
   });
 
+  FB.api( "/me", function (response) 
+	{
+	  if (response && !response.error)
+	  {
+	        $.each(response.data,function(index,friend) 
+	        {
+                alert(friend.name + ' has id:' + friend.id);
+            });
+      } 
+      else 
+      {
+            alert("Error!");
+      }
+	});
 
+};
 
-  // Now that we've initialized the JavaScript SDK, we call 
-  // FB.getLoginStatus().  This function gets the state of the
-  // person visiting this page and can return one of three states to
-  // the callback you provide.  They can be:
-  //
-  // 1. Logged into your app ('connected')
-  // 2. Logged into Facebook, but not your app ('not_authorized')
-  // 3. Not logged into Facebook and can't tell if they are logged into
-  //    your app or not.
-  //
-  // These three cases are handled in the callback function.
+function loadFriends(){
+	FB.api('/me', {fields: 'last_name'}, function(response) 
+	{
+		  alert(response);
+	});
 
-	// FB.getLoginStatus(function(response) {
- //    	statusChangeCallback(response);
- //  	});
-
-  };
-
-  
+	
+}
 
 
 	

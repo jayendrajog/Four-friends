@@ -88,6 +88,10 @@ app.get('/', function(req, res) {
 	res.render('index');
 });
 
+app.get('/friendSelect', function(req, res) {
+	res.render('friendSelect');
+});
+
 app.get('/test', function(req, res) {
   res.send('hello world');
 });
@@ -127,6 +131,7 @@ app.post('/submit', function(req, res) {
 		schedule = req.body.schedule;
 	console.log("Name is " + name + ", and scheduleArray is " + schedule);
 	
+
 	var insertDocument = function(db, callback) {
 		db.collection('users').insertOne( {
 			user : {
