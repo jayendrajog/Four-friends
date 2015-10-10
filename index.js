@@ -15,9 +15,11 @@ app.use(express.static(__dirname + '/public'));
 
 //	get
 app.get('/', function(req, res) {
-	//res.send('Hello world!');
-	//	temporarily redirects to LinkedIn
 	res.render('index');
+});
+
+app.get('/friendSelect', function(req, res) {
+	res.render('friendSelect');
 });
 
 app.get('/tset', function(req, res) {
