@@ -11,7 +11,7 @@ MongoClient.connect(url, function(err, db) {
 
 var user = "Andy Lin";
 var friendsArray = ["Jayendra Jog", "Helen Lee", "Anthony Lai", "Josephine Ree", "Rex Fukuchi"];
-var schedule = "test";
+var scheduleArray = "test";
 var freeTimeArray = ["04:00", "06:00", "16:00"];
 
 var insertDocument = function(db, callback) {
@@ -28,15 +28,31 @@ var insertDocument = function(db, callback) {
 	});
 };
 
-var usertoFind = "Andy Lin";
-var timeToFind = "06:00";
-
-var findUser = function(db, callback)
-	var cursor = db.collection('users').find( {})
-
 MongoClient.connect(url, function(err, db) {
 	assert.equal(err, null);
 	insertDocument(db, function() {
 		db.close();
 	});
 });
+
+/* var userToFind = "Andy Lin";
+var timeToFind = "06:00";
+
+var findUser = function(db, callback) {
+	var cursor = db.collection('users').find(userToFind);
+	cursor.each(function(err, doc) {
+		assert.equal(err, null);
+		if (doc != null) {
+			console.dir(doc);
+		} else {
+			callback();
+		}
+	});
+};
+
+MongoClient.connect(url, function(err, db) {
+	assert.equal(null, err);
+	findUser(db, function() {
+		db.close();
+	});
+}); */
