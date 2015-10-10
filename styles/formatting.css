@@ -2,6 +2,13 @@ body{
 	background-color: #3498DB;
 }
 
-h1{
+@font-face{
+  font-family: "Title Font";
+  src: url('fonts/black_jack.ttf') format('truetype');
+}
 
+h1{
+	text-align: center;
+	padding-top: 15vh;
+	font: 800% "Title Font", Arial, Helvetica;
 }
