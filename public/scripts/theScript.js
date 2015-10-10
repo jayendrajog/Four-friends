@@ -71,15 +71,7 @@ function loadFriends()
     return null;
 }
 
-<<<<<<< HEAD
-document.getElementById('#fb-root').onload = function() {loadFriends();};
-=======
-// $('document').ready(function() {
-
-//   loadFriends();
-// });
 setTimeout(
   function() {
     loadFriends();
   }, 400);
->>>>>>> 526cbad8aa59211e0b2442bf344fce4f39b001ae
