@@ -3,6 +3,7 @@ var bodyParser = require('body-parser');
 //var jsonfile = require('jsonfile');
 var app = express();
 //var file = 'data.json';
+var tools = require('./public/scripts/tools');
 
 //	mongodb
 var MongoClient = require('mongodb').MongoClient;
@@ -90,6 +91,7 @@ app.get('/', function(req, res) {
 
 app.get('/friendSelect', function(req, res) {
 	res.render('friendSelect');
+	//tools.loadFriends();
 });
 
 app.get('/test', function(req, res) {
