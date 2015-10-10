@@ -20,28 +20,21 @@
 
 	<body>
 		<script>
-		  window.fbAsyncInit = function() {
-		    FB.init({
-		      appId      : '521096238056941',
-		      xfbml      : true,
-		      version    : 'v2.5'
-		    });
-		  };
+		
 
-		  (function(d, s, id){
-		     var js, fjs = d.getElementsByTagName(s)[0];
-		     if (d.getElementById(id)) {return;}
-		     js = d.createElement(s); js.id = id;
-		     js.src = "//connect.facebook.net/en_US/sdk.js";
-		     fjs.parentNode.insertBefore(js, fjs);
-		   }(document, 'script', 'facebook-jssdk'));
-		</script>
-		<div class="fb-like" data-share="true" data-width="450" data-show-faces="true"></div>
+			</script>
+
+
+
 		<h1> Four Friends</h1>
 		<div class="login">
 			<div class = "row">
 				<div class = "col-md-6">
-					<button type="button" class="btn btn-primary" id ="fblogin">
+					<!-- <fb:login-button scope="public_profile,email,user_friends" size="large" onlogin="checkLoginState();">
+						Continue With Facebook
+					</fb:login-button> -->
+					<!-- <div id="status"></div> -->
+					<button type="button" class="btn btn-primary" id ="fblogin" onclick = "fb_login();">
 						<i class="fa fa-facebook-official fa-fw"></i>
 						&nbsp; Continue With Facebook
 					</button>

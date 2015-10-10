@@ -22,10 +22,12 @@ h1{
 }
 
 .btn-primary{
+	text-align: left;
 	margin-left: 2vw;
-	width: 17vw;
+	width: 230px;
 	margin-top: 3vh;
 }
+
 #fblogin{
 	background-color: #3B5998;
 }
