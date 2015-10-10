@@ -1,0 +1,23 @@
+{
+  "name": "four-friends",
+  "version": "1.0.0",
+  "description": "Cal Hacks 2.0 project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jayendrajog/four-friends.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jayendrajog/four-friends/issues"
+  },
+  "homepage": "https://github.com/jayendrajog/four-friends",
+  "dependencies": {
+    "express": "^4.13.3",
+    "ejs": "^1.0.0"
+  }
+}
