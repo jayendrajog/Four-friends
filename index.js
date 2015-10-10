@@ -3,7 +3,6 @@ var bodyParser = require('body-parser');
 //var jsonfile = require('jsonfile');
 var app = express();
 //var file = 'data.json';
-var tools = require('./public/scripts/tools');
 
 //	mongodb
 var MongoClient = require('mongodb').MongoClient;
