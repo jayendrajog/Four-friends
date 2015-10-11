@@ -24,6 +24,11 @@ h2 {
 	font: 500% "Title Font", Arial, Helvetica;
 }
 
+.tagline {
+	text-align: center;
+	font: 150% sans-serif, Arial, Helvetica;
+}
+
 .fb-root{
 	vertical-align: left;
 	padding-left: 17vw;
