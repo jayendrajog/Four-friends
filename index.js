@@ -104,6 +104,10 @@ app.get('/test', function(req, res) {
   res.send('hello world');
 });
 
+app.get('/result', function(req, res) {
+	res.render('result');
+});
+
 // app.get('/form', function(req, res) {
 // 	res.render('form');
 // });
@@ -180,8 +184,8 @@ app.post('/submit', function(req, res) {
 	var insertDocument = function(db, callback) {
 		db.collection('users').insertOne( {
 			user : {
-				"Name" : name,
-				"schedule" : schedule
+				"Name" : "Jay",
+				"schedule" : "Friday"
 			}
 		}, function(err, result) {
 			assert.equal(err, null);

@@ -117,6 +117,73 @@ tr:hover{
 .text{
 	margin-left: 10vw;
 }
+
+h1.result {
+	padding: 0;
+}
+
+h3 {
+	font: 250%;
+}
+
+.result-row div {
+	/*border: 1px solid red;*/
+}
+
+.result-user {
+	background-color: rgba(255, 255, 255, 0.75);
+	padding: 20px 0 20px 0;
+	text-align: center;
+	font-size: 150%;
+	margin-left: -15px;
+}
+
+.result-user-pic {
+	/*border: 1px solid red;*/
+	padding: 30px 0 10px 0;
+}
+.result-user-pic img {
+	/*border: 1px solid red;*/
+	height: 170px;
+	display: block;
+	margin: auto;
+
+}
+
+.event-time {
+	font-size: 80%;
+}
+
+.event-location {
+	font-size: 80%;
+	padding-bottom: 33px;
+}
+
+.result-friend {
+	background-color: rgba(255, 255, 255, 0.75);
+	padding: 20px 0 20px 0;
+	margin-bottom: 10px;
+	margin-left: 15px;
+	padding-left: 35px
+}
+
+.result-friend h4 {
+	display: inline-block;
+	margin-left: 80px;
+}
+
+.result-friend-pic {
+	display: inline-block;
+	width: 50px;
+}
+
+.result-friend-pic img {
+	width: 50px;
+	margin-left: 40px;
+	display: inline-block;
+}
+
+
 /*th{
 	background: linear-gradient(#333 0%, #444 100%);
 	color: #FFF;
