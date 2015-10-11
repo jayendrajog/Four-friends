@@ -6,17 +6,18 @@ $(document).ready(function () {
 function listen() {
 	$('#submitFriends').click(function() {
 		console.log("Clicked");
-		parse();
+		parseCustom();
 	})
 }
 
-function parse() {
+function parseCustom() {
 	console.log($('#studentList').html());
 	var array =[];
+	var first, last, fullName;
 	$('#studentList').find('tr').toArray().forEach(function(ele) {
 		//console.log(ele);
 		//console.log($(ele));
-		var first, last, fullName;
+		// var first, last, fullName;
 		$(ele).find('td').toArray().forEach(function(element) {
 			// var first, last;
 			//console.log($(element));
@@ -43,15 +44,15 @@ function parse() {
 				}
 
 		});
-
-		// if ($(ele).parent().is(":nth-child(1)")) {
-		// 	//console.log($(this));
-		// 	console.log("yeah?");
-		// 	console.log("First name is: " + $(ele).html());
-		// }
-		// console.log("First name is: " + $(ele).parent().is(":nth-child(1)"));
-		//console.log($ele);
-		//console.log("stuff");
 	});
 	console.log(array);
+
+	// var text = '{
+	// 	"user" : fullName,
+	// 	"potential" : array
+	// }';
+	// var obj = JSON.parse(text);
+
+	// localStorage.setItem('dataStorage', JSON.stringify(obj));
+
 }

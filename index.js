@@ -96,6 +96,10 @@ app.get('/friendSelect', function(req, res) {
 	//tools.loadFriends();
 });
 
+app.get('/VCTest', function(req, res) {
+	res.render('ViewController');
+});
+
 app.get('/test', function(req, res) {
   res.send('hello world');
 });
