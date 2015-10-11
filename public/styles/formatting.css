@@ -14,11 +14,12 @@ h1{
 	text-align: center;
 	padding-top: 15vh;
 	font: 800% "Title Font", Arial, Helvetica;
+	text-shadow: 2px 2px 4px #000000;
 }
 
 h2 {
 	text-align: center;
-	
+	text-shadow: 2px 2px 4px #000000;
 	padding-top: 15vh;
 	font: 500% "Title Font", Arial, Helvetica;
 }
@@ -64,13 +65,8 @@ h2 {
 	border-left: thick solid #ff0000;
 }
 
-td,th{
-	border: 1px solid #CCC;
-	/**background-color: white;
-	color: black;**/
-}
-
 #text{
+	font-family: Garamond;
 	margin-left: 10vw;
 }
 
@@ -80,6 +76,7 @@ td,th{
 	width: 80vw;
 	margin-left: 10vw;
 	margin-right: 10vw;
+	border-collapse: collapse;
 }
 
 th{
@@ -115,6 +112,7 @@ tr:hover{
 }
 
 .text{
+	font-family: Calibri, sans-serif;
 	margin-left: 10vw;
 }
 /*th{
@@ -140,12 +138,12 @@ tr:hover{
 tr:nth-child(even) td{ background: #EEE;}
 tr:nth-child(odd) td{ background: #FDFDFD;}
 /**tr td:hover { background: #666; color: #FFF;}**/
-/*
+
 tr:first-child th:nth-child(1) { 
   border-radius: 5px 0 0 0; 
 } 
 
 tr:first-child th:last-child { 
-  border-radius: 0 5px 5px 0; 
-}*/
+  border-radius: 0 5px 0 0; 
+}
 
