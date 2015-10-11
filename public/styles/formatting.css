@@ -1,5 +1,7 @@
 body{
-	background-color: #3498DB;
+	
+	background: url(http://ebeleokoye.com/wp-content/uploads/layerslider/LayerSlider-5-responsive-demo-slider/bg4.jpg);
+	background-size: cover;
 }
 
 @font-face{
@@ -13,6 +15,17 @@ h1{
 	font: 800% "Title Font", Arial, Helvetica;
 }
 
+h2 {
+	text-align: left;
+	padding-left: 20vw;
+	padding-top: 15vh;
+	font: 500% "Title Font", Arial, Helvetica;
+}
+
+h2 .p{
+	vertical-align: left;
+	padding-left: 20vw;
+}
 
 .login{
 	height: 40vh;
@@ -30,28 +43,39 @@ h1{
 
 #fblogin{
 	background-color: #3B5998;
+	text-align: center;
 }
 
 #glogin{
 	border-color: #DC4E41;
 	background-color: #DC4E41;
+	text-align: center;
+	
 }
 
 #tlogin{
 	border-color: #4099FF;
 	background-color: #4099FF;
-}
-
-#addFriend{
-	border-color:  #00933B;
-	background-color:  #00933B;
-}
-
-.center{
 	text-align: center;
 }
 
 .email-login{
 	height: 100%;
 	border-left: thick solid #ff0000;
+}
+
+th{
+	background-color: white;
+	color: black;
+}
+
+.table-striped{
+	border-collapse: separate;	
+	width: 60%;
+	margin-left: 20vw;
+	border-color: transparent;
+
+}
+
+
 }
