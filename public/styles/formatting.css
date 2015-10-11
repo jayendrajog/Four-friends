@@ -48,17 +48,27 @@ h2 {
 
 #fblogin{
 	background-color: #3B5998;
-
+}
+#fblogin:hover{
+	background-color:#2f4779;
+	border-color: #2f4779;
 }
 
 #glogin{
 	border-color: #DC4E41;
 	background-color: #DC4E41;	
 }
-
+#glogin:hover{
+	border-color: #b03e34;
+	background-color: #b03e34;
+}
 #tlogin{
 	border-color: #4099FF;
 	background-color: #4099FF;
+}
+#tlogin:hover{
+	border-color: #337acc;
+	background-color: #337acc;
 }
 
 .email-login{
@@ -95,8 +105,6 @@ tr:hover{
 	background: #666;
 	opacity: 1;
 	color: black;
-	text-shadow: -.30px -.30px  black, 
-                .30px .30px black;
 }
 
 #firstRow:hover{
