@@ -42,6 +42,15 @@ h1{
 	background-color: #4099FF;
 }
 
+#addFriend{
+	border-color:  #00933B;
+	background-color:  #00933B;
+}
+
+.center{
+	text-align: center;
+}
+
 .email-login{
 	height: 100%;
 	border-left: thick solid #ff0000;

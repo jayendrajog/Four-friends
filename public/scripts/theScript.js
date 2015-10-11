@@ -20,9 +20,6 @@
 };
 
 
-
-
-
   function fb_login() {
 	FB.login(function(response)
 		{
@@ -46,7 +43,6 @@
    
   }
   
-
   // This function is called when someone finishes with the Login
   // Button.  See the onlogin handler attached to it in the sample
   // code below.
@@ -64,7 +60,8 @@ function loadFriends()
     	{
     		var str = response.data[i].name;
     		thehtml += '<tr><td>' + str.substr(0,str.indexOf(' ')) + '</td>';
-    		thehtml += '<td>' + str.substr(str.indexOf(' ')+1) + '</td></tr>';
+    		thehtml += '<td>' + str.substr(str.indexOf(' ')+1) + '</td>';
+        thehtml += '<td> <input type="checkbox" name = "addFriends" value = "Yes"> Add Friend! </td></tr>';
 	  	}
 	  	$('#studentList').append(thehtml);
     });
@@ -74,4 +71,6 @@ function loadFriends()
 setTimeout(
   function() {
     loadFriends();
-  }, 400);
+  }, 700);
+
+$(document).getElementById('#addFriend').onclick = function(){alert('lol');};
