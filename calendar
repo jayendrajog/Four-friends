@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="../bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="public/styles/calendar.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+  </script>
+
+  <script>
+    $( function() {
+      $('td').click(function() {
+        $(this).toggleClass("selected-cell");
+
+        if ($('.selected-cell').length >= 1) {
+          $('.btn-success').css({ opacity: 1 });
+        }
+        else {
+          $('.btn-success').css({ opacity: 0 });
+        }
+        
+        if ($('.leftalign', this).css('opacity') == 0) {
+          $('.leftalign', this).css({ opacity: 1 });
+        }
+        else {
+          $('.leftalign', this).css({ opacity: 0 });
+        }
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row vertical-center-row">
+      <div class="text-center col-md-4 col-md-offset-4">
+        <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Choose when you're <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;available<br><font size="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to chill.</font></h1>
+      </div>
+      <div class="col-md-6">
+        <table class="center">
+          <thead>
+           <tr>
+            <th>10/11/15</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+           <td><div class="leftalign">&#10148;</div>9:00 AM</td>
+         </tr>
+         <tr>
+           <td><div class="leftalign">&#10148;</div>10:00 AM</td>
+         </tr>
+         <tr>
+           <td><div class="leftalign">&#10148;</div>11:00 AM</td>
+         </tr>
+         <tr>
+           <td><div class="leftalign">&#10148;</div>12:00 PM</td>
+         </tr>
+         <tr>
+           <td><div class="leftalign">&#10148;</div>1:00 PM</td>
+         </tr>
+         <tr>
+           <td><div class="leftalign">&#10148;</div>2:00 PM</td>
+         </tr>
+         <tr>
+           <td><div class="leftalign">&#10148;</div>3:00 PM</td>
+         </tr>
+         <tr>
+           <td><div class="leftalign">&#10148;</div>4:00 PM</td>
+         </tr>
+         <tr>
+           <td><div class="leftalign">&#10148;</div>5:00 PM</td>
+         </tr>
+         <tr>
+           <td><div class="leftalign">&#10148;</div>6:00 PM</td>
+         </tr>
+         <tr>
+           <td><div class="leftalign">&#10148;</div>7:00 PM</td>
+         </tr>
+         <tr>
+           <td><div class="leftalign">&#10148;</div>8:00 PM</td>
+         </tr>
+         <tr>
+           <td><div class="leftalign">&#10148;</div>9:00 PM</td>
+         </tr>
+       </tbody>
+     </table>
+   </div>
+ </div>
+ <button type="button" class="btn btn-success">Done!</button>
+</div>
+</div>
+</body>
+</html>
+
