@@ -6,6 +6,7 @@
 body {
     background: url(http://ebeleokoye.com/wp-content/uploads/layerslider/LayerSlider-5-responsive-demo-slider/bg4.jpg);
     background-size: 150%;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -13,7 +14,7 @@ h1 {
   font-family: 'Avenir Next', monospace;
   font-weight: normal;
   color: #F0F0F0;
-  top: 500px;
+  top: 200px;
   left: 10px;
   font-size: 40px;
 }
@@ -73,8 +74,8 @@ td:hover {
 .btn-success {
   position: relative;
   border: none;
-  left: 950px;
-  bottom: 450px;
+  /*left: 950px;*/
+  /*bottom: 450px;*/
   font-family: 'Avenir Next', monospace;
   font-size: 60px;
   font-weight: 300;
@@ -87,6 +88,13 @@ td:hover {
   vertical-align: right;
   display: inline-block;
   opacity: 0;
-  background-color: #80B2FF
-  
+  background-color: #80B2FF;
+
+  top: 250px;
+  left: 120px;
+}
+
+#done {
+  /*margin-left: -750px;*/
+  /*margin-top: 200px;*/
 }

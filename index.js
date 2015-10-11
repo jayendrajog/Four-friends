@@ -108,6 +108,10 @@ app.get('/result', function(req, res) {
 	res.render('result');
 });
 
+app.get('/calendar', function(req, res) {
+	res.render('calendar');
+});
+
 // app.get('/form', function(req, res) {
 // 	res.render('form');
 // });
@@ -165,7 +169,7 @@ app.all('/form', function(req, res) {
 				//window.close();
 			//});
 			//tools.func1();
-			res.render('form');
+			res.render('calendar');
 		});
 	});
 

@@ -14,12 +14,12 @@ h1{
 	text-align: center;
 	padding-top: 20vh;
 	font: 800% "Title Font", Arial, Helvetica;
-	text-shadow: 4px 4px 8px #000000;
+	/*text-shadow: 4px 4px 8px #000000;*/
 }
 
 h2 {
 	text-align: center;
-	text-shadow: 4px 4px 8px #000000;
+	/*text-shadow: 4px 4px 8px #000000;*/
 	padding-top: 15vh;
 	font: 500% "Title Font", Arial, Helvetica;
 }
