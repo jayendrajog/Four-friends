@@ -7,18 +7,19 @@ body{
 
 @font-face{
   font-family: "Title Font";
-  src: url('fonts/black_jack.ttf') format('truetype');
+  src: url('fonts/elegant.ttf') format('truetype');
 }
 
 h1{
 	text-align: center;
-	padding-top: 15vh;
+	padding-top: 20vh;
 	font: 800% "Title Font", Arial, Helvetica;
+	text-shadow: 4px 4px 8px #000000;
 }
 
 h2 {
 	text-align: center;
-	
+	text-shadow: 4px 4px 8px #000000;
 	padding-top: 15vh;
 	font: 500% "Title Font", Arial, Helvetica;
 }
@@ -36,6 +37,7 @@ h2 {
 }
 .signin_buttons{
 	text-align: center;
+	margin-top: 7vh;
 }
 .btn-primary{
 	text-align: left;
@@ -64,28 +66,26 @@ h2 {
 	border-left: thick solid #ff0000;
 }
 
-td,th{
-	border: 1px solid #CCC;
-	/**background-color: white;
-	color: black;**/
-}
-
 #text{
-	margin-left: 10vw;
+	font-family: Garamond;
+	margin-left: 15vw;
 }
 
 	
 .table
 {
-	width: 80vw;
-	margin-left: 10vw;
-	margin-right: 10vw;
+	width: 70vw;
+	margin-left: 15vw;
+	margin-right: 15vw;
+	border-collapse: collapse;
 }
 
 th{
-	background-color: #999;
+	background-color: #888;
 	color: white;
 	text-align: center;
+	font: ;
+
 }
 tr{
 	background-color: #EEE;
@@ -93,8 +93,10 @@ tr{
 
 tr:hover{
 	background: #666;
+	opacity: 1;
 	color: black;
-	opacity: .75;
+	text-shadow: -.30px -.30px  black, 
+                .30px .30px black;
 }
 
 #firstRow:hover{
@@ -111,11 +113,23 @@ tr:hover{
 
 .right-side{
 	text-align: right;
-	padding-right: 10vw;
+	padding-right: 15vw;
 }
 
 .text{
-	margin-left: 10vw;
+	font-family: Calibri, sans-serif;
+	font-size: 125%;
+	margin-left: 15vw;
+	margin-top: 3vw;
+}
+
+.{
+	height: 1.5;
+	width: 1.5;
+}
+
+.checkList{
+	text-align: center;
 }
 
 h1.result {
@@ -207,12 +221,12 @@ tr:hover{
 tr:nth-child(even) td{ background: #EEE;}
 tr:nth-child(odd) td{ background: #FDFDFD;}
 /**tr td:hover { background: #666; color: #FFF;}**/
-/*
+
 tr:first-child th:nth-child(1) { 
   border-radius: 5px 0 0 0; 
 } 
 
 tr:first-child th:last-child { 
-  border-radius: 0 5px 5px 0; 
-}*/
+  border-radius: 0 5px 0 0; 
+}
 
