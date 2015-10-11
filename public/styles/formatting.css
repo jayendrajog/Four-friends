@@ -1,30 +1,32 @@
 body{
 	
 	background: url(http://ebeleokoye.com/wp-content/uploads/layerslider/LayerSlider-5-responsive-demo-slider/bg4.jpg);
-	background-size: cover;
+	background-size: 150%;
+	overflow-x: hidden;
 }
 
 @font-face{
   font-family: "Title Font";
-  src: url('fonts/black_jack.ttf') format('truetype');
+  src: url('fonts/elegant.ttf') format('truetype');
 }
 
 h1{
 	text-align: center;
-	padding-top: 15vh;
+	padding-top: 20vh;
 	font: 800% "Title Font", Arial, Helvetica;
+	text-shadow: 4px 4px 8px #000000;
 }
 
 h2 {
-	text-align: left;
-	padding-left: 20vw;
+	text-align: center;
+	text-shadow: 4px 4px 8px #000000;
 	padding-top: 15vh;
 	font: 500% "Title Font", Arial, Helvetica;
 }
 
-h2 .p{
+.fb-root{
 	vertical-align: left;
-	padding-left: 20vw;
+	padding-left: 17vw;
 }
 
 .login{
@@ -33,7 +35,10 @@ h2 .p{
 	background-color: white;
 	margin-left: 30vw;	
 }
-
+.signin_buttons{
+	text-align: center;
+	margin-top: 7vh;
+}
 .btn-primary{
 	text-align: left;
 	margin-left: 2vw;
@@ -43,20 +48,17 @@ h2 .p{
 
 #fblogin{
 	background-color: #3B5998;
-	text-align: center;
+
 }
 
 #glogin{
 	border-color: #DC4E41;
-	background-color: #DC4E41;
-	text-align: center;
-	
+	background-color: #DC4E41;	
 }
 
 #tlogin{
 	border-color: #4099FF;
 	background-color: #4099FF;
-	text-align: center;
 }
 
 .email-login{
@@ -64,18 +66,167 @@ h2 .p{
 	border-left: thick solid #ff0000;
 }
 
+#text{
+	font-family: Garamond;
+	margin-left: 15vw;
+}
+
+	
+.table
+{
+	width: 70vw;
+	margin-left: 15vw;
+	margin-right: 15vw;
+	border-collapse: collapse;
+}
+
 th{
-	background-color: white;
+	background-color: #888;
+	color: white;
+	text-align: center;
+	font: ;
+
+}
+tr{
+	background-color: #EEE;
+}
+
+tr:hover{
+	background: #666;
+	opacity: 1;
 	color: black;
+	text-shadow: -.30px -.30px  black, 
+                .30px .30px black;
 }
 
-.table-striped{
-	border-collapse: separate;	
-	width: 60%;
-	margin-left: 20vw;
-	border-color: transparent;
+#firstRow:hover{
+	background: #666;
+	color: black;
+	opacity: 1;
+}
+/*
+.notfirst:hover{
+	background: #666;
+	color: black;
+	opacity: .75;
+}*/
+
+.right-side{
+	text-align: right;
+	padding-right: 15vw;
+}
+
+.text{
+	font-family: Calibri, sans-serif;
+	font-size: 125%;
+	margin-left: 15vw;
+	margin-top: 3vw;
+}
+
+.{
+	height: 1.5;
+	width: 1.5;
+}
+
+.checkList{
+	text-align: center;
+}
+
+h1.result {
+	padding: 0;
+}
+
+h3 {
+	font: 250%;
+}
+
+.result-row div {
+	/*border: 1px solid red;*/
+}
+
+.result-user {
+	background-color: rgba(255, 255, 255, 0.75);
+	padding: 20px 0 20px 0;
+	text-align: center;
+	font-size: 150%;
+	margin-left: -15px;
+}
+
+.result-user-pic {
+	/*border: 1px solid red;*/
+	padding: 30px 0 10px 0;
+}
+.result-user-pic img {
+	/*border: 1px solid red;*/
+	height: 170px;
+	display: block;
+	margin: auto;
 
 }
 
-
+.event-time {
+	font-size: 80%;
 }
+
+.event-location {
+	font-size: 80%;
+	padding-bottom: 33px;
+}
+
+.result-friend {
+	background-color: rgba(255, 255, 255, 0.75);
+	padding: 20px 0 20px 0;
+	margin-bottom: 10px;
+	margin-left: 15px;
+	padding-left: 35px
+}
+
+.result-friend h4 {
+	display: inline-block;
+	margin-left: 80px;
+}
+
+.result-friend-pic {
+	display: inline-block;
+	width: 50px;
+}
+
+.result-friend-pic img {
+	width: 50px;
+	margin-left: 40px;
+	display: inline-block;
+}
+
+
+/*th{
+	background: linear-gradient(#333 0%, #444 100%);
+	color: #FFF;
+	font-family: Garamond;
+	font-size: 12pt;
+	font-weight: bold;
+	text-align: center;
+}
+
+td{
+	background: #FAFAFA;
+	font-weight: lighter;
+	text-align: center;
+}
+
+tr:hover{
+	background: #666;
+	color: #FFF;
+}
+
+tr:nth-child(even) td{ background: #EEE;}
+tr:nth-child(odd) td{ background: #FDFDFD;}
+/**tr td:hover { background: #666; color: #FFF;}**/
+
+tr:first-child th:nth-child(1) { 
+  border-radius: 5px 0 0 0; 
+} 
+
+tr:first-child th:last-child { 
+  border-radius: 0 5px 0 0; 
+}
+
