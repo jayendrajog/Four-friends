@@ -3,6 +3,9 @@ var bodyParser = require('body-parser');
 //var jsonfile = require('jsonfile');
 var app = express();
 //var file = 'data.json';
+var jsdom = require('jsdom');
+var tools = require('./public/scripts/tools');
+var html = "http://localhost:8080/friendSelect";
 
 //	mongodb
 var MongoClient = require('mongodb').MongoClient;
@@ -97,9 +100,9 @@ app.get('/test', function(req, res) {
   res.send('hello world');
 });
 
-app.get('/form', function(req, res) {
-	res.render('form');
-});
+// app.get('/form', function(req, res) {
+// 	res.render('form');
+// });
 
 app.get('/retrieve', function(req, res) {
 	console.log("In retrieve");
@@ -122,6 +125,43 @@ app.get('/retrieve', function(req, res) {
       		db.close();
   		});
 	});
+});
+
+app.all('/form', function(req, res) {
+	var insertDocument = function(db, callback) {
+		db.collection('testObj').insertOne( {
+			user : {
+				"firstName" : "Jay",
+				"lastName" : "Jog"
+			}
+		}, function(err, result) {
+			assert.equal(err, null);
+			console.log("Inserted a document into the users collection.");
+			callback(result);
+		});
+	};
+
+	MongoClient.connect(url, function(err, db) {
+		assert.equal(err, null);
+		insertDocument(db, function() {
+			db.close();
+			//tools.foo();
+			//jsdom.env(html, function(err, window) {
+				//var $ = window.$;
+				// $('#studentList').toArray().forEach(function(ele) {
+				// 	console.log("First name is: " + $(ele).is(":nth-child(1)"));
+				// 	//console.log($ele);
+				// 	//console.log("stuff");
+				// });
+				//console.log(window.$('#studentList').text());
+				//window.close();
+			//});
+			//tools.func1();
+			res.render('form');
+		});
+	});
+
+	//res.render('form');
 });
 
 //	post
