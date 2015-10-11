@@ -43,7 +43,7 @@ function parse() {
 				}
 
 		});
-		console.log(array);
+
 		// if ($(ele).parent().is(":nth-child(1)")) {
 		// 	//console.log($(this));
 		// 	console.log("yeah?");
@@ -53,4 +53,5 @@ function parse() {
 		//console.log($ele);
 		//console.log("stuff");
 	});
+	console.log(array);
 }
