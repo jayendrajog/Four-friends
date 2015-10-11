@@ -16,15 +16,15 @@ h1{
 }
 
 h2 {
-	text-align: left;
-	padding-left: 20vw;
+	text-align: center;
+	
 	padding-top: 15vh;
 	font: 500% "Title Font", Arial, Helvetica;
 }
 
-h2 .p{
+.fb-root{
 	vertical-align: left;
-	padding-left: 20vw;
+	padding-left: 17vw;
 }
 
 .login{
@@ -64,18 +64,52 @@ h2 .p{
 	border-left: thick solid #ff0000;
 }
 
-th{
-	background-color: white;
-	color: black;
+td,th{
+	border: 1px solid #CCC;
+	/**background-color: white;
+	color: black;**/
 }
 
-.table-striped{
-	border-collapse: separate;	
-	width: 60%;
-	margin-left: 20vw;
-	border-color: transparent;
-
+#text{
+	margin-left: 10vw;
 }
 
-
+	
+.table
+{
+	width: 80vw;
+	margin-left: 10vw;
+	padding-right: 10vw;
 }
+/*th{
+	background: linear-gradient(#333 0%, #444 100%);
+	color: #FFF;
+	font-family: Garamond;
+	font-size: 12pt;
+	font-weight: bold;
+	text-align: center;
+}
+
+td{
+	background: #FAFAFA;
+	font-weight: lighter;
+	text-align: center;
+}
+
+tr:hover{
+	background: #666;
+	color: #FFF;
+}
+
+tr:nth-child(even) td{ background: #EEE;}
+tr:nth-child(odd) td{ background: #FDFDFD;}
+/**tr td:hover { background: #666; color: #FFF;}**/
+/*
+tr:first-child th:nth-child(1) { 
+  border-radius: 5px 0 0 0; 
+} 
+
+tr:first-child th:last-child { 
+  border-radius: 0 5px 5px 0; 
+}*/
+
