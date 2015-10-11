@@ -17,6 +17,7 @@
     xfbml      : true,  // parse social plugins on this page
     version    : 'v2.5' // use version 2.2										
   });
+  fb_login();
 };
 
 
@@ -38,7 +39,8 @@
     // for FB.getLoginStatus().
     if (response.status === 'connected') {
       // Logged into your app and Facebook. 
-      window.location = "/friendSelect";
+      //window.location = "/friendSelect";
+      loadFriends();
     } 
    
   }
@@ -68,9 +70,9 @@ function loadFriends()
     return null;
 }
 
-setTimeout(
-  function() {
-    loadFriends();
-  }, 700);
+// setTimeout(
+//   function() {
+//     loadFriends();
+//   }, 700);
 
-$(document).getElementById('#addFriend').onclick = function(){alert('lol');};
+//$(document).getElementById('#addFriend').onclick = function(){alert('lol');};
