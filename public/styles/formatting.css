@@ -1,7 +1,8 @@
 body{
 	
 	background: url(http://ebeleokoye.com/wp-content/uploads/layerslider/LayerSlider-5-responsive-demo-slider/bg4.jpg);
-	background-size: cover;
+	background-size: 150%;
+	overflow-x: hidden;
 }
 
 @font-face{
@@ -33,7 +34,9 @@ h2 {
 	background-color: white;
 	margin-left: 30vw;	
 }
-
+.signin_buttons{
+	text-align: center;
+}
 .btn-primary{
 	text-align: left;
 	margin-left: 2vw;
@@ -43,20 +46,17 @@ h2 {
 
 #fblogin{
 	background-color: #3B5998;
-	text-align: center;
+
 }
 
 #glogin{
 	border-color: #DC4E41;
-	background-color: #DC4E41;
-	text-align: center;
-	
+	background-color: #DC4E41;	
 }
 
 #tlogin{
 	border-color: #4099FF;
 	background-color: #4099FF;
-	text-align: center;
 }
 
 .email-login{
@@ -79,7 +79,43 @@ td,th{
 {
 	width: 80vw;
 	margin-left: 10vw;
+	margin-right: 10vw;
+}
+
+th{
+	background-color: #999;
+	color: white;
+	text-align: center;
+}
+tr{
+	background-color: #EEE;
+}
+
+tr:hover{
+	background: #666;
+	color: black;
+	opacity: .75;
+}
+
+#firstRow:hover{
+	background: #666;
+	color: black;
+	opacity: 1;
+}
+/*
+.notfirst:hover{
+	background: #666;
+	color: black;
+	opacity: .75;
+}*/
+
+.right-side{
+	text-align: right;
 	padding-right: 10vw;
+}
+
+.text{
+	margin-left: 10vw;
 }
 /*th{
 	background: linear-gradient(#333 0%, #444 100%);

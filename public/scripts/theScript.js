@@ -59,9 +59,9 @@ function loadFriends()
     	for(i = 0; i < response.data.length; i++)
     	{
     		var str = response.data[i].name;
-    		thehtml += '<tr><td>' + str.substr(0,str.indexOf(' ')) + '</td>';
+    		thehtml += '<tr class = "notfirst"><td>' + str.substr(0,str.indexOf(' ')) + '</td>';
     		thehtml += '<td>' + str.substr(str.indexOf(' ')+1) + '</td>';
-        thehtml += '<td> <input type="checkbox" name = "addFriends" value = "Yes"> Add Friend! </td></tr>';
+        thehtml += '<td> <input type="checkbox"  name = "addFriends" value = "Yes"> Add Friend! </td></tr>';
 	  	}
 	  	$('#studentList').append(thehtml);
     });
